@@ -1,0 +1,227 @@
+<section class="topic fade" id="nang-cao">
+  <div class="advanced-zone">
+    <span class="tag purple">Nâng cao theo dạng kiểm tra</span>
+    <h2>Ví dụ khó hơn – luyện tư duy và câu phân loại</h2>
+    <p class="lead">Mỗi bài dưới đây đi xa hơn thao tác cơ bản: phải kết hợp nhiều ý, xét đầu mút, tìm tham số, phản ví dụ hoặc lập luận hai chiều.</p>
+
+    <div class="adv-grid">
+      <div class="adv-card">
+        <div class="difficulty">Dạng 1 · Logic số học</div>
+        <h3>Ví dụ NC1. “n chẵn ⇔ n² chẵn”</h3>
+        <p>Chứng minh với n∈ℤ: n là số chẵn khi và chỉ khi n² là số chẵn.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p><b>Chiều thuận:</b> n chẵn ⇒ n=2k ⇒ n²=4k²=2(2k²), nên n² chẵn.</p>
+          <p><b>Chiều đảo:</b> nếu n² chẵn mà n lẻ thì n=2k+1 ⇒ n²=4k²+4k+1 là lẻ, mâu thuẫn. Vậy n chẵn.</p>
+          <p>Hai chiều đều đúng nên mệnh đề tương đương đúng.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 2 · Phản ví dụ</div>
+        <h3>Ví dụ NC2. Bác bỏ mệnh đề kéo theo</h3>
+        <p>Xét: “Với mọi x∈ℝ, nếu x²&gt;4 thì x&gt;2”. Đúng hay sai?</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Sai. Chọn x=−3 thì x²=9&gt;4 nhưng x=−3 không lớn hơn 2.</p>
+          <p><b>Kinh nghiệm:</b> với biểu thức bình phương, luôn kiểm tra cả nhánh âm.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 3 · Phủ định lượng từ</div>
+        <h3>Ví dụ NC3. Phủ định rồi xét đúng/sai</h3>
+        <p>P: ∀x∈ℝ, x²−2x+2&gt;0. Viết phủ định của P và xét P.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Phủ định: ∃x∈ℝ sao cho x²−2x+2≤0.</p>
+          <p>Ta có x²−2x+2=(x−1)²+1&gt;0 với mọi x∈ℝ. Vì vậy P đúng và phủ định của P sai.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 4 · Tập hợp bằng nhau</div>
+        <h3>Ví dụ NC4. Tìm tham số trong tập hữu hạn</h3>
+        <p>Tìm m để {m;2m;3}={1;2;3}.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Vì 3 đã có sẵn, hai giá trị còn lại m và 2m phải tạo thành 1 và 2.</p>
+          <p>m=1 ⇒ 2m=2, thỏa mãn. Nếu m=2 thì 2m=4 không thuộc tập đích.</p>
+          <p>Vậy m=1.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 5 · Tập nghiệm</div>
+        <h3>Ví dụ NC5. Giao với ℤ sau khi giải phương trình</h3>
+        <p>A={x∈ℤ | x&lt;4}, B={x∈ℤ | (5x−3x²)(x²+2x−3)=0}. Tìm A∩B.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>(5x−3x²)(x²+2x−3)=x(5−3x)(x+3)(x−1)=0.</p>
+          <p>Nghiệm nguyên: x=0, x=−3, x=1. Giá trị 5/3 không nguyên.</p>
+          <p>Cả −3,0,1 đều nhỏ hơn 4. Vậy A∩B={−3;0;1}.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 6 · Khoảng chứa tham số</div>
+        <h3>Ví dụ NC6. Điều kiện A⊂B với đầu mút hở</h3>
+        <p>Cho A=(m−1;m+2], B=[0;5). Tìm m để A⊂B.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Đầu trái của A là m−1 và không lấy. Để A không vượt sang trái B, cần m−1≥0 ⇒ m≥1.</p>
+          <p>Đầu phải m+2 được lấy, trong khi 5 không thuộc B, nên phải có m+2&lt;5 ⇒ m&lt;3.</p>
+          <p>Vậy <b>1≤m&lt;3</b>.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 7 · Giao khác rỗng</div>
+        <h3>Ví dụ NC7. Tìm m để hai đoạn có điểm chung</h3>
+        <p>A=[m;m+2], B=[1;4]. Tìm m để A∩B≠∅.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Hai đoạn có điểm chung khi đầu trái của A không nằm bên phải 4 và đầu phải của A không nằm bên trái 1.</p>
+          <p>m≤4 và m+2≥1 ⇒ m≥−1.</p>
+          <p>Vậy <b>−1≤m≤4</b>.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 8 · Giao bằng một điểm</div>
+        <h3>Ví dụ NC8. Điều kiện tiếp xúc của hai đoạn</h3>
+        <p>A=[m;3], B=[3;7]. Khi nào A∩B chỉ có đúng một phần tử?</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Bắt buộc phần giao chỉ là {3}. Vì B bắt đầu tại 3, điều này xảy ra khi A kết thúc tại 3 và A không vượt sang phải.</p>
+          <p>Với A=[m;3] không rỗng, chỉ cần m≤3. Khi đó A∩B={3}.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 9 · Hiệu khoảng</div>
+        <h3>Ví dụ NC9. Hiệu có đầu mút đổi kiểu ngoặc</h3>
+        <p>Tính [−2;5] \ (1;4].</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Loại các số lớn hơn 1 và không vượt quá 4 khỏi [−2;5].</p>
+          <p>1 không thuộc tập bị loại nên vẫn giữ; 4 thuộc tập bị loại nên bị bỏ.</p>
+          <p>Kết quả: <b>[−2;1]∪(4;5]</b>.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 10 · Đếm tập con có điều kiện</div>
+        <h3>Ví dụ NC10. Đếm tập con</h3>
+        <p>A={1;2;3;4;5}. Có bao nhiêu tập con của A chứa cả 1 và 2?</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>1 và 2 bắt buộc có. Ba phần tử 3,4,5 mỗi phần tử có 2 lựa chọn: lấy hoặc không lấy.</p>
+          <p>Số tập con là 2³=<b>8</b>.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 11 · Venn ngược</div>
+        <h3>Ví dụ NC11. Tìm số chỉ thuộc một nhóm</h3>
+        <p>Một lớp có 42 học sinh. Có 28 em học CLB Toán, 25 em học CLB Anh và 6 em không học CLB nào. Tính số em học cả hai và số em chỉ học đúng một CLB.</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Số học ít nhất một CLB: 42−6=36.</p>
+          <p>36=28+25−n(A∩B) ⇒ n(A∩B)=17.</p>
+          <p>Chỉ Toán: 28−17=11; chỉ Anh: 25−17=8.</p>
+          <p>Chỉ đúng một CLB: 11+8=<b>19</b>.</p>
+        </div></div>
+      </div>
+
+      <div class="adv-card">
+        <div class="difficulty">Dạng 12 · Venn ba tập · mở rộng</div>
+        <h3>Ví dụ NC12. Ba nhóm sở thích</h3>
+        <p>Trong 50 học sinh: 30 thích Toán, 28 thích Lý, 20 thích Hóa; 15 thích Toán và Lý, 10 thích Toán và Hóa, 8 thích Lý và Hóa, 5 thích cả ba. Có bao nhiêu em thích ít nhất một môn?</p>
+        <div class="reveal"><button onclick="toggleAnswer(this)">Xem lời giải</button><div class="answer">
+          <p>Dùng nguyên lý bao hàm - loại trừ:</p>
+          <p>30+28+20−15−10−8+5=<b>50</b>.</p>
+          <p>Vậy cả 50 học sinh đều thích ít nhất một trong ba môn.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="topic fade" id="phong-thi-nghiem">
+  <div class="smart-lab">
+    <span class="tag">Tương tác trực tiếp</span>
+    <h2>Phòng thí nghiệm Mệnh đề & Tập hợp</h2>
+    <p class="lead">Thay số, kéo thanh trượt hoặc nhập tập hợp; kết quả và hình minh họa cập nhật ngay trên trang.</p>
+
+    <div class="lab-grid">
+      <div class="lab">
+        <h3>1. Máy tính phép toán tập hợp</h3>
+        <p class="small">Nhập các phần tử, cách nhau bằng dấu phẩy hoặc dấu chấm phẩy.</p>
+        <div class="controls">
+          <div class="field"><label>Tập A</label><input id="setA" value="1,2,3,4,7"></div>
+          <div class="field"><label>Tập B</label><input id="setB" value="3,4,5,7,9"></div>
+        </div>
+        <div class="result-box" id="setResult"></div>
+        <svg id="setVennSvg" class="live-svg" viewBox="0 0 600 260" aria-label="Venn tương tác"></svg>
+      </div>
+
+      <div class="lab">
+        <h3>2. Máy Venn tính số học sinh</h3>
+        <p class="small">Thay các số để xem số chỉ thuộc A, chỉ thuộc B, thuộc cả hai và không thuộc nhóm nào.</p>
+        <div class="controls">
+          <div class="field"><label>n(A)</label><input id="nA" type="number" value="25" min="0"></div>
+          <div class="field"><label>n(B)</label><input id="nB" type="number" value="20" min="0"></div>
+          <div class="field"><label>n(A∩B)</label><input id="nAB" type="number" value="12" min="0"></div>
+          <div class="field"><label>Tổng N</label><input id="nTotal" type="number" value="40" min="0"></div>
+        </div>
+        <div class="result-box" id="vennCalcResult"></div>
+        <svg id="vennCalcSvg" class="live-svg" viewBox="0 0 600 300" aria-label="Venn số lượng"></svg>
+      </div>
+
+      <div class="lab">
+        <h3>3. Khám phá tham số m trên trục số</h3>
+        <p class="small">Bài toán: A=(m−1;m+2], B=[0;5). Tìm khi nào A⊂B.</p>
+        <div class="controls">
+          <div class="field"><label>Kéo m</label><input id="mSlider" type="range" min="-2" max="6" value="2" step="0.1"></div>
+          <div class="field"><label>Giá trị m</label><input id="mNumber" type="number" min="-2" max="6" value="2" step="0.1"></div>
+        </div>
+        <div class="result-box" id="parameterResult"></div>
+        <svg id="parameterSvg" class="live-svg" viewBox="0 0 700 280" aria-label="Trục số tham số"></svg>
+      </div>
+
+      <div class="lab">
+        <h3>4. Giao / Hợp hai khoảng</h3>
+        <p class="small">Chọn đầu mút và kiểu đóng/mở. Công cụ xử lý cả trường hợp rời nhau hoặc giao tại đúng một điểm.</p>
+        <div class="controls">
+          <div class="field"><label>A trái</label><input id="aL" type="number" value="-2" step="0.5"></div>
+          <div class="field"><label>A phải</label><input id="aR" type="number" value="4" step="0.5"></div>
+          <div class="field"><label>A trái lấy?</label><select id="aLC"><option value="1">Có [</option><option value="0">Không (</option></select></div>
+          <div class="field"><label>A phải lấy?</label><select id="aRC"><option value="0">Không )</option><option value="1">Có ]</option></select></div>
+          <div class="field"><label>B trái</label><input id="bL" type="number" value="1" step="0.5"></div>
+          <div class="field"><label>B phải</label><input id="bR" type="number" value="6" step="0.5"></div>
+          <div class="field"><label>B trái lấy?</label><select id="bLC"><option value="0">Không (</option><option value="1">Có [</option></select></div>
+          <div class="field"><label>B phải lấy?</label><select id="bRC"><option value="1">Có ]</option><option value="0">Không )</option></select></div>
+        </div>
+        <div class="result-box" id="intervalResult"></div>
+        <svg id="intervalSvg" class="live-svg" viewBox="0 0 700 310" aria-label="Hai khoảng tương tác"></svg>
+      </div>
+
+      <div class="lab">
+        <h3>5. Máy tạo phủ định</h3>
+        <p class="small">Chọn lượng từ và quan hệ để quan sát quy tắc phủ định.</p>
+        <div class="controls three">
+          <div class="field"><label>Lượng từ</label><select id="qQuant"><option value="all">∀ với mọi</option><option value="exists">∃ tồn tại</option><option value="none">Không có</option></select></div>
+          <div class="field"><label>Miền</label><select id="qDomain"><option>ℝ</option><option>ℤ</option><option>ℕ</option></select></div>
+          <div class="field"><label>Quan hệ</label><select id="qRel"><option value=">">&gt;</option><option value=">=">≥</option><option value="<">&lt;</option><option value="<=">≤</option><option value="=">=</option><option value="!=">≠</option></select></div>
+          <div class="field"><label>Vế phải</label><input id="qValue" type="number" value="3" step="1"></div>
+        </div>
+        <div class="result-box" id="negationResult"></div>
+      </div>
+
+      <div class="lab">
+        <h3>6. Bộ tạo bài ngẫu nhiên</h3>
+        <p class="small">Mỗi lần bấm sẽ tạo một câu mới về giao/hợp khoảng hoặc số phần tử Venn.</p>
+        <div class="generator-box">
+          <div class="generator-question" id="randomQuestion">Bấm “Tạo bài mới” để bắt đầu.</div>
+          <input id="randomAnswer" placeholder="Nhập đáp án của em" style="width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;font:inherit">
+          <div class="generator-actions">
+            <button class="primary" onclick="newRandomQuestion()">Tạo bài mới</button>
+            <button onclick="checkRandomAnswer()">Kiểm tra</button>
+            <button onclick="showRandomSolution()">Xem lời giải</button>
+          </div>
+          <div id="randomFeedback" class="result-box" style="display:none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
